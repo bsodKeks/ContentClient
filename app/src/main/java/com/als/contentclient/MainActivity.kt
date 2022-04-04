@@ -102,7 +102,7 @@ class HistorySource(
         query()
     }
 
-    // Получаем данные о запросе по позиции
+    // Получаем данные о запросе по ID
     fun getCityByPosition(position: Int): HistoryEntity {
         queryById()
         return if (cursor == null) {
